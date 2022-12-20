@@ -1,23 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Tile from "./Tile";
 
 function App() {
+  const eloMelo = "fiufiu";
+  const link = "https://www.youtube.com/";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
-      </header>
+      <div className="component">
+        <h1>hello {eloMelo}</h1>
+        <a href={link}>YT</a>
+        <p>{`coś`}</p>
+        <p>{7}</p>
+        <p>{[1, 2, 3, 4, 5, 6, 7]}</p>
+        <p>{Math.random() * 10}</p>
+      </div>
+
+      <Tile />
     </div>
   );
 }
