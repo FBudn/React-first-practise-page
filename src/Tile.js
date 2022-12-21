@@ -10,7 +10,7 @@ const Tile = () => {
 
 export default Tile;
 
-/* sfc na początku
+/* sfc na początkuu
 jak zrobić on-click:
 
 funkcja do jego obsługi nad "return" w komponencie 
