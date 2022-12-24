@@ -1,5 +1,3 @@
-//import InputInfo from "./InputInformations";
-
 const Buttons = () => {
   return (
     <button

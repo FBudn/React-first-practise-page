@@ -1,10 +1,3 @@
-//const [email, setEmail] = useState(document.getElementById("emailInput").value);
-//const [password, setPassword] = useState(document.getElementById("passwordInput").value);
-//const emailValue = document.getElementById("emailInput").value;
-//const passwordValue = document.getElementById("passwordInput").value;
-
-//import { useState } from "react";
-//import InputInfo from "./InputInformations";
 const InputDiv = () => {
   return (
     <div className="flex flex-col gap-4 w-full mt-4">
