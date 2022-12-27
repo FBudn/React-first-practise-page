@@ -1,4 +1,16 @@
+//import { useState } from "react";
+import Buttons from "./Buttons";
+import InputInfo from "./InputInfo";
+
 const InputDiv = () => {
+  const logClick = () => {
+    alert(`jestem`);
+    /*<InputInfo
+      emailValue={document.getElementById("emailInput").value}
+      passwordValue={document.getElementById("passwordInput").value}
+    />;*/
+  };
+
   return (
     <div className="flex flex-col gap-4 w-full mt-4">
       <div className="flex flex-col gap-1">
@@ -17,6 +29,7 @@ const InputDiv = () => {
           className="rounded-md border-stone-300 h-10 border-2"
           type="text"
         />
+        <Buttons logClick={logClick} />;
       </div>
     </div>
   );
