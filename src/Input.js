@@ -1,14 +1,11 @@
-//import { useState } from "react";
-import Buttons from "./Buttons";
-import InputInfo from "./InputInfo";
+import { useState } from "react";
 
 const InputDiv = () => {
-  const logClick = () => {
-    alert(`jestem`);
-    /*<InputInfo
-      emailValue={document.getElementById("emailInput").value}
-      passwordValue={document.getElementById("passwordInput").value}
-    />;*/
+  const [emailValue, setEmail] = useState("");
+  const [passwordValue, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
   };
 
   return (
@@ -20,6 +17,10 @@ const InputDiv = () => {
           id="emailInput"
           className="rounded-md border-stone-300 h-10 border-2"
           type="text"
+          required
+          value={emailValue}
+          onChange={(e) => setEmail(e.target.value)}
+          onSubmit={handleSubmit}
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -28,8 +29,11 @@ const InputDiv = () => {
           id="passwordInput"
           className="rounded-md border-stone-300 h-10 border-2"
           type="text"
+          required
+          value={passwordValue}
+          onChange={(e) => setPassword(e.target.value)}
+          onSubmit={handleSubmit}
         />
-        <Buttons logClick={logClick} />;
       </div>
     </div>
   );
@@ -37,7 +41,7 @@ const InputDiv = () => {
 
 export default InputDiv;
 
-/* 
+/* e.targer to sam input w którym zawiera się ta funkcja
  <div className="hidden">
           <InputInfo
             email={document.getElementById("emailInput").value}
@@ -45,5 +49,10 @@ export default InputDiv;
           />
         </div>
 
-        
+         fetch("http://localhost:3000/#", {
+      method: "POST",
+      headers: { "Content type": "application/json" },
+      body: JSON.stringify(inputData),
+    });
+    const inputData = { emailValue, passwordValue };
 */
