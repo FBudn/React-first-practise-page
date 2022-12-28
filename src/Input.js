@@ -1,8 +1,11 @@
+//import React, { createContex } from "react";
 import { useState } from "react";
+import InputInfo from "./InputInfo";
 
 const InputDiv = () => {
   const [emailValue, setEmail] = useState("");
   const [passwordValue, setPassword] = useState("");
+  //const Name = createContex();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +15,6 @@ const InputDiv = () => {
     <div className="flex flex-col gap-4 w-full mt-4">
       <div className="flex flex-col gap-1">
         <div className="text-sm font-medium">Email</div>
-
         <input
           id="emailInput"
           className="rounded-md border-stone-300 h-10 border-2"
@@ -25,6 +27,7 @@ const InputDiv = () => {
       </div>
       <div className="flex flex-col gap-1">
         <div className="text-sm font-medium">Password</div>
+
         <input
           id="passwordInput"
           className="rounded-md border-stone-300 h-10 border-2"
@@ -35,12 +38,12 @@ const InputDiv = () => {
           onSubmit={handleSubmit}
         />
       </div>
+      <InputInfo emailValue={emailValue} passwordValue={passwordValue} />
     </div>
   );
 };
-
 export default InputDiv;
-
+//export { Name };
 /* e.targer to sam input w którym zawiera się ta funkcja
  <div className="hidden">
           <InputInfo

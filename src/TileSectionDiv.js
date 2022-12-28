@@ -3,15 +3,14 @@ import CheckBox from "./CheckBox";
 import ForgotPassword from "./ForgotPassword";
 import Icons from "./Icons";
 import InputDiv from "./Input";
-import InputInfo from "./InputInfo";
 import Line from "./Line";
 import SignOrLog from "./LogIn";
 import NeedAcount from "./NeedAccount";
 
 const TileDiv = () => {
   const logClick = () => {
-    alert(`jestem`);
     document.getElementById("inputInfoDIV").classList.toggle("flex");
+    document.getElementById("rememberPasswordID").classList.toggle("hide");
   };
 
   return (
@@ -24,7 +23,6 @@ const TileDiv = () => {
       <Line />
       <Icons />
       <NeedAcount />
-      <InputInfo />
     </div>
   );
 };
