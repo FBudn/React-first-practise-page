@@ -1,13 +1,20 @@
 import "./App.css";
 import Tile from "./Tile";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App bg-blue-400 min-h-screen min-w-full">
-      <div className="flex w-full flex-col justify-center align-center items-center max-w-7xl">
-        <Tile />
+    <Router>
+      <div className="App bg-blue-400 min-h-screen min-w-full">
+        <Switch>
+          <Route path="/">
+            <div className="flex w-full flex-col justify-center align-center items-center max-w-7xl">
+              <Tile />
+            </div>
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 
