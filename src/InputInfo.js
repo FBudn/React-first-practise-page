@@ -1,6 +1,3 @@
-//import useFetch from "/.useFetch/";
-import InputDiv from "./Input";
-
 const InputInfo = ({ emailValue, passwordValue, checkboxValue }) => {
   return (
     <div
@@ -26,12 +23,3 @@ const InputInfo = ({ emailValue, passwordValue, checkboxValue }) => {
 };
 
 export default InputInfo;
-
-/* 
-const { data: inputData } = useFetch("http://localhost:3000/#");
-  <Name.Consumer>
-        {(olaboga) => {
-          return olaboga;
-        }}
-      </Name.Consumer>
-*/
