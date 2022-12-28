@@ -1,5 +1,4 @@
 import Buttons from "./Buttons";
-import CheckBox from "./CheckBox";
 import ForgotPassword from "./ForgotPassword";
 import Icons from "./Icons";
 import InputDiv from "./Input";
@@ -17,7 +16,7 @@ const TileDiv = () => {
     <div className="flex flex-col gap-2 justify-center w-4/5 align-start items-start text-zinc-600">
       <SignOrLog log="LOGIN" />
       <InputDiv />
-      <CheckBox />
+
       <Buttons logClick={logClick} />
       <ForgotPassword />
       <Line />
@@ -28,7 +27,7 @@ const TileDiv = () => {
 };
 
 export default TileDiv;
-/* 
+/*      <CheckBox />
   const emailValue = document.getElementById("emailInput").value;
   const passwordValue = document.getElementById("passwordInput").value;
   const checkboxValue = document.getElementById("rememberPasswordID").checked;

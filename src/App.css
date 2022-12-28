@@ -11,4 +11,14 @@
   display: none;
 }
 
+#emailInput::placeholder {
+  color: transparent;
+  opacity: 0;
+}
+
+#passwordInput::placeholder {
+  color: transparent;
+  opacity: 0;
+}
+
 /* My background*/

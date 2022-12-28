@@ -1,15 +1,10 @@
-//import React, { createContex } from "react";
 import { useState } from "react";
 import InputInfo from "./InputInfo";
 
 const InputDiv = () => {
   const [emailValue, setEmail] = useState("");
   const [passwordValue, setPassword] = useState("");
-  //const Name = createContex();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  const [checkboxValue, setCheckbox] = useState("");
 
   return (
     <div className="flex flex-col gap-4 w-full mt-4">
@@ -22,7 +17,7 @@ const InputDiv = () => {
           required
           value={emailValue}
           onChange={(e) => setEmail(e.target.value)}
-          onSubmit={handleSubmit}
+          placeholder="elo"
         />
       </div>
       <div className="flex flex-col gap-1">
@@ -35,10 +30,22 @@ const InputDiv = () => {
           required
           value={passwordValue}
           onChange={(e) => setPassword(e.target.value)}
-          onSubmit={handleSubmit}
         />
       </div>
-      <InputInfo emailValue={emailValue} passwordValue={passwordValue} />
+      <div className="flex justify-start align-center items-center text-center gap-3 h-10 pl-1 -mt-2">
+        <input
+          type="checkbox"
+          name="rememberPassword"
+          id="rememberPasswordID"
+          onChange={(e) => setCheckbox(e.target.checked.toString())}
+        />
+        <div className="text-sm font-medium">Remember me?</div>
+      </div>
+      <InputInfo
+        emailValue={emailValue}
+        passwordValue={passwordValue}
+        checkboxValue={checkboxValue}
+      />
     </div>
   );
 };
