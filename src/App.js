@@ -1,18 +1,22 @@
 import "./App.css";
 import Tile from "./Tile";
+import SignUpTile from "./SignUp/SignUp";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <div className="App bg-blue-400 min-h-screen min-w-full">
-        <Switch>
-          <Route path="/">
-            <div className="flex w-full flex-col justify-center align-center items-center max-w-7xl">
+        <div className="flex w-full flex-col justify-center align-center items-center max-w-7xl">
+          <Switch>
+            <Route exact path="/">
               <Tile />
-            </div>
-          </Route>
-        </Switch>
+            </Route>
+            <Route path="/Sign">
+              <SignUpTile />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );

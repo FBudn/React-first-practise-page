@@ -10,6 +10,9 @@ const TileDiv = () => {
   const logClick = () => {
     document.getElementById("inputInfoDIV").classList.toggle("flex");
     document.getElementById("rememberPasswordID").classList.toggle("hide");
+    console.log(document.getElementById("emailInput").value);
+    console.log(document.getElementById("passwordInput").value);
+    console.log(document.getElementById("rememberPasswordID").checked);
   };
 
   return (
