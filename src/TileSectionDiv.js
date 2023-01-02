@@ -20,7 +20,7 @@ const TileDiv = () => {
       <SignOrLog log="LOGIN" />
       <InputDiv />
 
-      <Buttons logClick={logClick} />
+      <Buttons logClick={logClick} text="LOGIN" />
       <ForgotPassword />
       <Line />
       <Icons />
