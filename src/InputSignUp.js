@@ -12,7 +12,7 @@ const InputSignUp = () => {
         <input
           id="emailInput"
           className="rounded-md border-stone-300 h-10 border-2"
-          type="text"
+          type="email"
           required
           value={emailValue}
           onChange={(e) => setEmail(e.target.value)}
