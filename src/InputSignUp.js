@@ -25,7 +25,7 @@ const InputSignUp = () => {
         <input
           id="passwordInput"
           className="rounded-md border-stone-300 h-10 border-2"
-          type="text"
+          type="password"
           required
           value={passwordValue}
           onChange={(e) => setPassword(e.target.value)}

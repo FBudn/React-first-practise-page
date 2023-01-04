@@ -26,14 +26,15 @@ const InputDiv = () => {
         <input
           id="passwordInput"
           className="rounded-md border-stone-300 h-10 border-2"
-          type="text"
+          type="password"
           required
           value={passwordValue}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
       <div className="flex justify-start align-center items-center text-center gap-3 h-10 pl-1 -mt-2">
-        <input className="cursor-pointer"
+        <input
+          className="cursor-pointer"
           type="checkbox"
           name="rememberPassword"
           id="rememberPasswordID"

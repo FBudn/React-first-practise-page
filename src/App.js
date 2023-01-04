@@ -9,13 +9,10 @@ function App() {
       <div className="App bg-blue-400 min-h-screen min-w-full">
         <div className="flex w-full flex-col justify-center align-center items-center max-w-7xl">
           <Switch>
-            <Route
-              exact
-              path="https://fbudn.github.io/React-first-practise-page/"
-            >
+            <Route exact path="/">
               <Tile />
             </Route>
-            <Route path="https://fbudn.github.io/React-first-practise-page/Sign">
+            <Route path="/Sign">
               <SignUpTile />
             </Route>
           </Switch>
